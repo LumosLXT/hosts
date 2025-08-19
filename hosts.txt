@@ -1,35 +1,23 @@
-# ==========================
 # IPv4 Loopback (Standard)
-# ==========================
-127.0.0.1       localhost
-127.0.0.1       localhost.localdomain
-127.0.0.1       local
+127.0.0.1	localhost
+127.0.0.1	localhost.localdomain
+127.0.0.1	local
 
-# ==========================
 # IPv4 Broadcast (for LAN services)
-# ==========================
-255.255.255.255 broadcasthost
+255.255.255.255	broadcasthost
 
-# ==========================
 # IPv6 Loopback
-# ==========================
-::1             localhost
-::1             ip6-localhost ip6-loopback
+::1	localhost
+::1	ip6-localhost ip6-loopback
 
-# ==========================
-# IPv6 Link-Local (per-interface loopback)
-# ==========================
-fe80::1%lo0     localhost   # macOS/Unix style, harmless elsewhere
-
-# ==========================
 # IPv6 Multicast Groups
-# ==========================
-ff00::0         ip6-mcastprefix   # Multicast prefix
-ff02::1         ip6-allnodes      # All nodes on the link
-ff02::2         ip6-allrouters    # All routers on the link
-ff02::3         ip6-allhosts      # All hosts (rarely used, safe)
+ff00::0	ip6-mcastprefix	# Multicast prefix
+ff02::1	ip6-allnodes	# All nodes on the link
+ff02::2	ip6-allrouters	# All routers on the link
+ff02::3	ip6-allhosts	# All hosts (rarely used, safe)
 
-# ==========================
 # IPv6 Local Network (legacy/compatibility)
-# ==========================
-fe00::0         ip6-localnet      # Deprecated, kept for compatibility
+fe00::0	ip6-localnet	# Deprecated, kept for compatibility
+
+# IPv6 Link-Local (per-interface loopback)
+#fe80::1%lo0	localhost	# macOS/Unix style, harmless elsewhere
